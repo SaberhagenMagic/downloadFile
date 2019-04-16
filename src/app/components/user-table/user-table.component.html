@@ -1,0 +1,22 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#" (click)="downloadUsr()"><i class="fas fa-file-excel"></i></a>
+</nav>
+
+<table class="table tbUsr">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">e-mail</th>
+            <th scope="col">Tel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usr of usuarios">
+            <th scope="row">{{ usr.id }}</th>
+            <td>{{ usr.name }}</td>
+            <td>{{ usr.email }}</td>
+            <td>{{ usr.phone }}</td>
+        </tr>
+    </tbody>
+</table>
